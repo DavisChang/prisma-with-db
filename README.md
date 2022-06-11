@@ -1,4 +1,7 @@
-##  Set up Prisma / Start from scratch
+##  prisma-with-db
+Prisma, Docker, PostgreSQL, Playground porject
+
+### Set up Prisma / Start from scratch
 (Relational databases)[https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases-typescript-postgres]
 
 ### database setup
