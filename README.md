@@ -25,4 +25,10 @@ $ npx prisma migrate dev --name ${migration_name}
 
 // Seeding your database, it allows you to consistently re-create the same data in your database and can be used
 $ npx prisma db seed
+
+// Adds the migration to the migration history table without running the actual SQL (hotfix)
+$ prisma migrate resolve --applied "20201127134938-retroactively-add-index"
+
+// Deploying database changes with Prisma Migrate
+$ prisma migrate deploy
 ```
