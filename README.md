@@ -21,5 +21,8 @@ $ docker run --name my-pgadmin -p 8081:80 -e 'PGADMIN_DEFAULT_EMAIL=user@testloc
 $ docker inspect postgresql -f "{{json .NetworkSettings.Networks.bridge.IPAddress}}"
 
 // Create migrations from your Prisma schema, apply them to the database, generate artifacts
-$ prisma migrate dev
+$ prisma migrate dev --name ${migration_name}
+
+// Seeding your database, it allows you to consistently re-create the same data in your database and can be used
+$ npx prisma db seed
 ```
